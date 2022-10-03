@@ -1,26 +1,45 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\2977308\\.nuget\\packages\\": {}
+    "C:\\Users\\IsabelaRibeiro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2977308\\source\\repos\\CloshaApi\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\2977308\\source\\repos\\CloshaApi\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\2977308\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2977308\\source\\repos\\CloshaApi\\Application\\obj\\",
+      "projectPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\IsabelaRibeiro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\2977308\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IsabelaRibeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -29,12 +48,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/jblprd/4d0b2d3a-5dfd-475c-9882-6484239672f6/_packaging/QSS/nuget/v3/index.json": {}
+        "https://nuget.devexpress.com/hJ9X4F2WjixoUN9rTJXPBg8sI3qldlifY6oe7z4CnBLTGIYwto/api": {},
+        "https://pris.pkgs.visualstudio.com/c7fff5c7-4b07-4c33-be75-7dffbbf24305/_packaging/OptionsReport/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -52,7 +76,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -61,7 +86,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

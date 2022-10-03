@@ -10,9 +10,9 @@ public class Item
     public CategoryType Category { get; set; }
     public string Image { get; set; }
     public IEnumerable<string> Tags { get; set; }
-    public string OwnerId { get; set; }
+    public int OwnerId { get; set; }
 
 }
 public enum CategoryType { }
-public enum NegociationType { }
-public enum StatusType { }
+public enum NegociationType { Sale, Rent }
+public enum StatusType { Avaliable, Unavailable }

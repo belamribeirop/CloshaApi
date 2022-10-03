@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\CloshaApi\\Infra\\Infra.csproj": {}
+    "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\CloshaApi\\Domain\\Domain.csproj": {
+    "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\CloshaApi\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\User\\source\\repos\\CloshaApi\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\CloshaApi\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\IsabelaRibeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\IsabelaRibeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/hJ9X4F2WjixoUN9rTJXPBg8sI3qldlifY6oe7z4CnBLTGIYwto/api": {},
+          "https://pris.pkgs.visualstudio.com/c7fff5c7-4b07-4c33-be75-7dffbbf24305/_packaging/OptionsReport/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -43,7 +47,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,34 +57,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\CloshaApi\\Infra\\Infra.csproj": {
+    "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\CloshaApi\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\User\\source\\repos\\CloshaApi\\Infra\\Infra.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\CloshaApi\\Infra\\obj\\",
+        "projectPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\IsabelaRibeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\IsabelaRibeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/hJ9X4F2WjixoUN9rTJXPBg8sI3qldlifY6oe7z4CnBLTGIYwto/api": {},
+          "https://pris.pkgs.visualstudio.com/c7fff5c7-4b07-4c33-be75-7dffbbf24305/_packaging/OptionsReport/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\CloshaApi\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\CloshaApi\\Domain\\Domain.csproj"
+              "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\IsabelaRibeiro\\source\\repos\\CloshaApi\\Domain\\Domain.csproj"
               }
             }
           }
@@ -99,6 +108,8 @@
               "version": "[7.0.0-rc.1.22426.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0-rc.1.22426.7, )"
             }
@@ -109,7 +120,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -118,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
