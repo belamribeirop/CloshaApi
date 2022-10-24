@@ -8,11 +8,10 @@ using Microsoft.EntityFrameworkCore;
 namespace Extensions;
 public static class DependencyInjection
 {
-    public static IServiceCollection RegisterServices(this IServiceCollection services, ConfigurationManager configuration)
+    public static IServiceCollection RegisterServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("AppDbContext")));
 
-        services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddScoped<IItemRepository, ItemRepository>();

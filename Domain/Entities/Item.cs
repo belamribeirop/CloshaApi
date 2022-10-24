@@ -9,7 +9,7 @@ public class Item
     public NegociationType NegociationType { get; set; }
     public CategoryType Category { get; set; }
     public string Image { get; set; }
-    public IEnumerable<string> Tags { get; set; }
+    public string Tags { get; set; }
     public int OwnerId { get; set; }
 
 }
